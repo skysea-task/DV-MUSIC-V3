@@ -1,0 +1,67 @@
+{
+    "name": "Dvis-Music",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
+    "keywords": [
+    "python3",
+    "telegram",
+    "bot",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "28774732",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "02c1db016a07e9ece7fb5acb543e634b",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "",
+        "required": true
+      },
+      "MONGO_DB_URL": {
+        "description": "Get a mongodb url from https://cloud.mongodb.com.",
+        "value": "",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "The user id of user whom you would like to add as OWNER.",
+        "value": "1679112664",
+        "required": true
+      },
+      "STRING_SESSION": {
+        "description": "A Pyrogram v2 String Session.",
+        "value": "",
+        "required": true
+      },
+      "LOGGER_ID": {
+        "description": "Your Log Group ID, add your bot and promote as an admin with full rights!. Channel ki id mat daal dena bsdk.",
+        "value": "",
+        "required": true
+      },
+      "START_IMAGE_URL": {
+        "description": "Bot Start image link",
+        "value": "https://files.catbox.moe/t5gy4y.jpg",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
+  }
