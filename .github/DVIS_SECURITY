@@ -16,8 +16,8 @@ This section outlines the versions of our project that are currently receiving s
 
 To report a security vulnerability, please follow these guidelines:
 
-- **Where to Report:** Submit your findings to our dedicated security email address: security@example.com.
-- **Response Time:** We aim to acknowledge your report within 24 hours and provide updates on our progress every 7 days.
-- **Acceptance/Rejection:** If the vulnerability is accepted, we will work on a fix and keep you informed. If declined, we will provide a reason for our decision.
+- Where to Report: Submit your findings to our dedicated security email address: security@example.com.
+- Response Time: We aim to acknowledge your report within 24 hours and provide updates on our progress every 7 days.
+- Acceptance/Rejection: If the vulnerability is accepted, we will work on a fix and keep you informed. If declined, we will provide a reason for our decision.
 
 We appreciate your help in keeping our project secure.
