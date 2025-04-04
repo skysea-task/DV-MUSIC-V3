@@ -352,7 +352,7 @@ D = ["😘", "👾", "🤝", "👀", "❤️‍🔥", "💘", "😍", "😇", "�
 
 
 # Callback & Message Queries
-@bot.on_message(pyrofl.command(["start", "help"]) & pyrofl.private)
+@bot.on_message(pyrofl.command(["xstart", "xhelp"]) & pyrofl.private)
 async def start_message_private(client, message):
     user_id = message.from_user.id
     mention = message.from_user.mention
@@ -412,7 +412,7 @@ async def start_message_private(client, message):
 │❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
 │❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
 ├───────────────────⦿‍
-│               [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/DvisDmBot?start)
+│               [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/HeartBeat_Muzic)
 ╰───────────────────⦿
             """
 
@@ -491,7 +491,7 @@ ABUTTON = InlineKeyboardMarkup(
 HELP_C = """```
 ⌬ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ```
 
-**⌬ [【 ᴅᴠɪs-ϻυsɪᴄ 】](https://t.me/HeartBeat_Offi) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
+**⌬ [𝅗ـﮩ٨ـ𝅽𝅾𓆩ǝ།ပ̌͜ပ᭄๓ꪳ𓆪ﮩ٨ـ𝅽𝅾‐𝅘](https://t.me/HeartBeat_Offi) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
 ```\n⌬ ʙᴇsᴛ ғᴇᴀsɪʙɪʟɪᴛʏ ᴏɴ ᴛᴏᴘ  ?```
 
 **✦ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ
@@ -506,7 +506,7 @@ HELP_C = """```
 ⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/HeartBeat_Muzic)**"""
 
 HELP_X = """```
-    【 ᴅᴠɪs-ϻυsɪᴄ 】 ᴍᴇɴᴜ```
+    𝅗ـﮩ٨ـ𝅽𝅾𓆩ǝ།ပ̌͜ပ᭄๓ꪳ𓆪ﮩ٨ـ𝅽𝅾‐𝅘 ᴍᴇɴᴜ```
 
 **ᴀʟʟ ᴄᴏᴍᴍᴀɴᴅs ᴄᴀɴ ʙᴇ ᴜsᴇᴅ ᴡɪᴛʜ : /
 
@@ -522,7 +522,7 @@ HELP_X = """```
 
 ✦ /end - Cʟᴇᴀʀ , ᴇɴᴅ ᴀʟʟ sᴏɴɢ [ᴀᴜɪᴅᴏ & ᴠɪᴅᴇᴏ]
 
-❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ - [ᴅᴠɪs](https://t.me/DvisDmBot?start)**"""
+❖ 𝐏ᴏᴡᴇʀᴇᴅ ʙʏ - [𝅗ـﮩ٨ـ𝅽𝅾𓆩𝐇𖽞𖽖֟֯͡𖽸𖾓𝂬͢♡͢𝂬𝐁𖽞֟֠֯͡𖽖𖾓𓆪ﮩ٨ـ𝅽𝅾‐𝅘](https://t.me/HeartBeat_Muzic)**"""
 
 # Callback query handler
 @bot.on_callback_query(filters.regex("DVIS_MUSIC"))
@@ -566,7 +566,7 @@ async def back_to_home_menu(client, query):
 │❍ • ɴᴏ ʟᴀɢs + ɴᴏ ᴀᴅs •‍
 │❍ • 24x7 ᴏɴʟɪɴᴇ sᴜᴘᴘᴏʀᴛ •‍
 ├───────────────────⦿‍
-│               [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/DvisDmBot?start)
+│               [✰ 𝖮ᴡ፝֠֩𝛈𝛆ʀ  ✰](https://t.me/HeartBeat_Muzic)
 ╰───────────────────⦿
         """
 
@@ -898,10 +898,10 @@ async def stream_logger(
                 caption = f"""
 **✅ 𝐀ᴅᴅᴇᴅ 𝐓ᴏ 𝐐ᴜᴇᴜᴇ 𝐀ᴛ :** `#{position}`
 
-**❍ Tɪᴛʟᴇ ➥ ** {title}
-**❍ Dᴜʀᴀᴛɪᴏɴ ➥ ** {duration}
-**❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
-**❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋** {chat_name}
+**💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
 ❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/HeartBeat_Muzic)**
                 """
@@ -909,10 +909,10 @@ async def stream_logger(
                 caption = f"""
 **✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐎ɴ 𝐕ᴄ.**
 
-**❍ Tɪᴛʟᴇ ➥ ** {title}
-**❍ Dᴜʀᴀᴛɪᴏɴ ➥ ** {duration}
-**❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
-**❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋** {chat_name}
+**💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
 ❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
                 """
@@ -970,34 +970,40 @@ async def change_stream(chat_id):
     await call.play(chat_id, stream_media, config=call_config)
     await add_active_media_chat(chat_id, stream_type)
     caption = f"""
-**✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐎ɴ 𝐕ᴄ.**
+** ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★**
 
-**❍ Tɪᴛʟᴇ ➥ ** {title}
-**❍ Dᴜʀᴀᴛɪᴏɴ ➥ ** {duration}
-**❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
-**❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋** {chat_name}
+**💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
+** ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★**
+
+💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋 𑂾   [𝞖𝘌𝘈𝘙𝘛𝂬♡𝂬𝞑𝘌𝘈𝘛▹ᴴᴮ⸳⸳ⷮ⸳⸳ⷨ](https://t.me/HeartBeat_Offi)
     """
     buttons = InlineKeyboardMarkup(
+[
         [
-            [
-                InlineKeyboardButton(
-                    text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖",
-                    url=f"https://t.me/{bot.me.username}?startgroup=true",
-                )
-            ],
-            [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
-            ],
-            [
-                InlineKeyboardButton(
-                    text="〆 ᴄʟᴏsᴇ 〆",
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+         ],
+        [
+            InlineKeyboardButton(
+                text="💕 𝐆𖽷𖽙𖽪𖽳 🦋", url="https://t.me/HeartBeat_Muzic",
+            ),
+            InlineKeyboardButton(
+                text="💕 𝐌𖽙𖽷𖽞 🦋", url="https://t.me/HeartBeat_Offi",
+            )
+        ],
+        [InlineKeyboardButton(
+                    text="💕 𝐂𖾘𖽙𖾗𖾝  🦋",
                     callback_data="force_close",
                 )
-            ],
-        ]
+        ],
+    ]
     )
     return await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
 
@@ -1212,10 +1218,10 @@ async def stream_audio_or_video(client, message):
                 caption = f"""
 **✅ 𝐀ᴅᴅᴇᴅ 𝐓ᴏ 𝐐ᴜᴇᴜᴇ 𝐀ᴛ :** `#{position}`
 
-**❍ Tɪᴛʟᴇ ➥ ** {title}
-**❍ Dᴜʀᴀᴛɪᴏɴ ➥ ** {duration}
-**❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
-**❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋** {chat_name}
+**💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
 ❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/HeartBeat_Muzic)**
                 """
@@ -1323,12 +1329,12 @@ async def stream_audio_or_video(client, message):
                 caption = f"""
 **✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐎ɴ 𝐕ᴄ.**
 
-**❍ Tɪᴛʟᴇ ➥ ** {title}
-**❍ Dᴜʀᴀᴛɪᴏɴ ➥ ** {duration}
-**❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
-**❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋** {chat_name}
+**💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzicx
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
                 """
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
@@ -1492,7 +1498,7 @@ async def stream_end_handler(_, update: Update):
     return await change_stream(chat_id)
 
 
-@bot.on_message(cdx("ping") & ~pyrofl.bot)
+@bot.on_message(cdx("xping") & ~pyrofl.bot)
 async def check_sping(client, message):
     start = datetime.now()
     end = datetime.now()
@@ -1595,7 +1601,7 @@ async def check_bot_stats(client, message):
     except:
         pass
     photo = START_IMAGE_URL
-    caption = "**【 ᴅᴠɪs-ϻυsɪᴄ 】༗**"
+    caption = "**𝅗ـﮩ٨ـ𝅽𝅾𓆩ǝ།ပ̌͜ပ᭄๓ꪳ𓆪ﮩ٨ـ𝅽𝅾‐𝅘༗**"
     buttons = InlineKeyboardMarkup(
         [
             [
@@ -1634,7 +1640,7 @@ async def check_total_stats(client, query):
         video_chats = len(ACTIVE_VIDEO_CHATS)
         
         return await query.answer(
-            f"""⏱️ 【 ᴅᴠɪs-ϻυsɪᴄ 】
+            f"""⏱️ 【 ᴄ 】
 ☛ {uptime}
 
 🔴 Served Chats: {served_chats}
