@@ -80,8 +80,8 @@ if os.path.exists("Config.env"):
 
 API_ID = int(getenv("API_ID", "10284859"))
 API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
-BOT_TOKEN = getenv("BOT_TOKEN", None)
-STRING_SESSION = getenv("STRING_SESSION", None)
+BOT_TOKEN = getenv("BOT_TOKEN", "2096983652:AAGCPF06HIYxh1kgF6DJRziD6krrRlmNn0s")
+STRING_SESSION = getenv("STRING_SESSION", "BQGJMTYAFGYB4sRdKlNM86uNvuIRAt51j7d9igvQNFPxSQQDIOOLh-RL1hTDTY_g9jSxKBP0k0E2wTZnDqlYTHIGhFwZNvAaEFkBrJ_R0jGGYG2xc0gcfFmVd_X3TvhIEHNK8dxJywMgSnSoZYqcFXqWZZ6QYVdHGVNlZwQmvTmrusH1FTyjDxo-hpqTY4OpfHWWce3kk14NBGYzQOd_BJposJKbSoWOqKEVu7xkLAYZiwVrFV-U4gG1lJYaynCwaT59iouuUdSmEM-8bIWDRnFG5GU34mjowmvEj_J4rDhSkMdP8xhm9KwPgSHlqeNIwyHVjCRc2VbYjfFjxTJ3NliIjHCv5wAAAAHSHPeVAA")
 MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
 OWNER_ID = int(getenv("OWNER_ID","1281282633"))
 LOGGER_ID = int(getenv("LOGGER_ID", "-1001735663878"))
