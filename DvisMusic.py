@@ -469,11 +469,11 @@ async def start_message_private(client, message):
 CBUTTON = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
+            InlineKeyboardButton("💕 𝐆𖽷𖽙𖽪𖽳 🦋", url="https://t.me/HeartBeat_Muzic"),
+            InlineKeyboardButton("💕 𝐌𖽙𖽷𖽞 🦋", url="https://t.me/HeartBeat_Offi")
         ],
         [
-            InlineKeyboardButton("〆 ʙᴧᴄᴋ 〆", callback_data="back_to_home")
+            InlineKeyboardButton("💕 𝐂𖾘𖽙𖾗𖾝  🦋", callback_data="force_close")
         ]
     ]
 )
@@ -884,7 +884,7 @@ async def stream_logger(
             chat = await bot.get_chat(chat_id)
             chat_name = chat.title
             if chat.username:
-                chat_link = f"@HeartBeat_Muzic}"
+                chat_link = f"@HeartBeat_Muzic"
             else:
                 chat_link = "Private Chat"
             try:
@@ -896,23 +896,27 @@ async def stream_logger(
                 requested_by = user.title
             if position:
                 caption = f"""
-**✅ 𝐀ᴅᴅᴇᴅ 𝐓ᴏ 𝐐ᴜᴇᴜᴇ 𝐀ᴛ :** `#{position}`
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
 
-**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
-**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋**     {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋**    {duration}
 **💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
-❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/HeartBeat_Muzic)**
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
+
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋**  [𝞖𝘌𝘈𝘙𝘛𝂬♡𝂬𝞑𝘌𝘈𝘛▹ᴴᴮ⸳⸳ⷮ⸳⸳ⷨ](@heartBeat_Muzic)
                 """
             else:
                 caption = f"""
-**✅ 𝐒ᴛᴀʀᴛᴇᴅ 𝐒ᴛʀᴇᴀᴍɪɴɢ 𝐎ɴ 𝐕ᴄ.**
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
 
-**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
-**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋**     {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋**    {duration}
 **💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
+☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★
+
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋**  [𝞖𝘌𝘈𝘙𝘛𝂬♡𝂬𝞑𝘌𝘈𝘛▹ᴴᴮ⸳⸳ⷮ⸳⸳ⷨ](@heartBeat_Muzic)
                 """
             try:
                 await bot.send_photo(LOG_GROUP_ID, photo=thumbnail, caption=caption)
@@ -970,8 +974,8 @@ async def change_stream(chat_id):
     caption = f"""
 ** ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★**
 
-**💕 𝐓𖽹𖽷𖾘𖽞  🦋** {title}
-**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
+**💕 𝐓𖽹𖽷𖾘𖽞  🦋**     {title}
+**💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋**    {duration}
 **💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
 ** ☆ . * ● ¸ . ✦ .★　° :. ★ * • ○ ° ★**
@@ -1087,24 +1091,28 @@ async def stream_audio_or_video(client, message):
     else:
         if len(message.command) < 2:
             buttons = InlineKeyboardMarkup(
-                [
-                    [
-                InlineKeyboardButton(
-                    text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖",
-                    url=f"https://t.me/{bot.me.username}?startgroup=true",
+[
+        [
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+         ],
+        [
+            InlineKeyboardButton(
+                text="💕 𝐆𖽷𖽙𖽪𖽳 🦋", url="https://t.me/HeartBeat_Muzic",
+            ),
+            InlineKeyboardButton(
+                text="💕 𝐌𖽙𖽷𖽞 🦋", url="https://t.me/HeartBeat_Offi",
+            )
+        ],
+        [InlineKeyboardButton(
+                    text="💕 𝐂𖾘𖽙𖾗𖾝  🦋",
+                    callback_data="force_close",
                 )
-                    ],
-                    [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
-                    ],
-                    [
-                        InlineKeyboardButton(
-                            text="〆 ᴄʟᴏsᴇ 〆",
-                            callback_data="force_close",
-                        )
-                    ],
-                ]
+        ],
+    ]
             )
             return await aux.edit_text(
                 "**🥀 𝐆ɪᴠᴇ 𝐌ᴇ  𝐒ᴏᴍᴇ 𝐐ᴜᴇʀʏ To\n𝐏ʟᴀʏ 𝐀ᴜᴅɪᴏ 𝐕ɪᴅᴇᴏ❗...\n\nℹ️ 𝐄xᴀᴍᴘʟᴇs:\n≽ 𝐀ᴜᴅɪᴏ: `/play siya ram`\n≽ 𝐕ɪᴅᴇᴏ: `/vplay siya ram`**",
@@ -1171,24 +1179,28 @@ async def stream_audio_or_video(client, message):
         else:
             requested_by = user.title
     buttons = InlineKeyboardMarkup(
+[
         [
-            [
-                InlineKeyboardButton(
-                    text="❖ ᴛᴧᴘ тᴏ sᴇᴇ ᴍᴧɪᴄ ❖",
-                    url=f"https://t.me/{bot.me.username}?startgroup=true",
-                )
-            ],
-            [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
-            ],
-            [
-                InlineKeyboardButton(
-                    text="〆 ᴄʟᴏsᴇ 〆",
+            InlineKeyboardButton(text="▷", callback_data=f"ADMIN Resume|{chat_id}"),
+            InlineKeyboardButton(text="II", callback_data=f"ADMIN Pause|{chat_id}"),
+            InlineKeyboardButton(text="↻", callback_data=f"ADMIN Replay|{chat_id}"),
+            InlineKeyboardButton(text="‣‣I", callback_data=f"ADMIN Skip|{chat_id}"),
+            InlineKeyboardButton(text="▢", callback_data=f"ADMIN Stop|{chat_id}"),
+         ],
+        [
+            InlineKeyboardButton(
+                text="💕 𝐆𖽷𖽙𖽪𖽳 🦋", url="https://t.me/HeartBeat_Muzic",
+            ),
+            InlineKeyboardButton(
+                text="💕 𝐌𖽙𖽷𖽞 🦋", url="https://t.me/HeartBeat_Offi",
+            )
+        ],
+        [InlineKeyboardButton(
+                    text="💕 𝐂𖾘𖽙𖾗𖾝  🦋",
                     callback_data="force_close",
                 )
-            ],
-        ]
+        ],
+    ]
     )
     if stream_type == "Audio":
         stream_media = MediaStream(
@@ -1329,7 +1341,7 @@ async def stream_audio_or_video(client, message):
 **💕 𝐃𖽪𖽷𖽖𖾓𖽹𖽙𖽡 🦋** {duration}
 **💕 𝐏𖾘𖽖ʏ 𝀚 𝐁ʏ 🦋** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
+**💕 𝐏𖽙𖽮𖽞𖾖𖽴 𝐁ʏ 🦋**  [𝞖𝘌𝘈𝘙𝘛𝂬♡𝂬𝞑𝘌𝘈𝘛▹ᴴᴮ⸳⸳ⷮ⸳⸳ⷨ](@heartBeat_Muzic)
                 """
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
