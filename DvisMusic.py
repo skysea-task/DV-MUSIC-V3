@@ -441,7 +441,7 @@ async def start_message_private(client, message):
                     ),
                     InlineKeyboardButton(
                         text="˹ ʀᴇᴘᴏ ˼",
-                        url="https://github.com/IamDvis/DV-MUSIC-V3",
+                        url="https://t.me/HeartBeat_Muzic",
                     ),
                 ]
             ]
@@ -1523,7 +1523,7 @@ async def git_repo_link(client, message):
             ),
             InlineKeyboardButton(
                 text="˹ sᴏᴜꝛᴄᴇ ˼",
-                url="https://github.com/IamDvis/DV-MUSIC-V3"
+                url="https://t.me/HeartBeat_Muzic"
             ),
         ],
         [
