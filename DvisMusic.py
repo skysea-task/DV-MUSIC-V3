@@ -78,14 +78,15 @@ LOGGER = logging.getLogger("DURGESH")
 if os.path.exists("Config.env"):
     load_dotenv("Config.env")
 
-API_ID = int(getenv("API_ID", 0))
-API_HASH = getenv("API_HASH", None)
+API_ID = int(getenv("API_ID", "10284859"))
+API_HASH = getenv("API_HASH", "b0ad58eb8b845ba0003e0d9ce5fc2196")
 BOT_TOKEN = getenv("BOT_TOKEN", None)
 STRING_SESSION = getenv("STRING_SESSION", None)
-MONGO_DB_URL = getenv("MONGO_DB_URL", None)
-OWNER_ID = int(getenv("OWNER_ID", "5738579437"))
-LOG_GROUP_ID = int(getenv("LOG_GROUP_ID",0))
-START_IMAGE_URL = getenv("START_IMAGE_URL", None)
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://heartbeat:Beat7Heart@heartbeat.1h1nbxv.mongodb.net/?retryWrites=true&w=majority")
+OWNER_ID = int(getenv("OWNER_ID","1281282633"))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1001735663878"))
+LOG_GROUP_ID = int(getenv("LOG_GROUP_ID", "-1001735663878"))
+START_IMAGE_URL = getenv("START_IMAGE_URL", "https://graph.org/file/f21bcb4b8b9c421409b64.png")
 
 
 # Memory Database
@@ -134,7 +135,7 @@ bot = Client(
 call = PyTgCalls(app)
 call_config = GroupCallConfig(auto_start=False)
 
-mongo_async_cli = _mongo_async_(MONGO_DB_URL)
+mongo_async_cli = _mongo_async_(MONGO_DB_URI)
 mongodb = mongo_async_cli.dvisxdb
 
 # store start time
@@ -175,13 +176,13 @@ async def main():
         LOGGER.info("❌ 'STRING_SESSION' - Not Found ‼️")
         sys.exit()
 
-    if not MONGO_DB_URL:
-        LOGGER.info("'MONGO_DB_URL' - Not Found !!")
+    if not MONGO_DB_URI:
+        LOGGER.info("'MONGO_DB_URI' - Not Found !!")
         sys.exit()
     try:
         await mongo_async_cli.admin.command('ping')
     except Exception:
-        LOGGER.info("❌ 'MONGO_DB_URL' - Not Valid !!")
+        LOGGER.info("❌ 'MONGO_DB_URI' - Not Valid !!")
         sys.exit()
     LOGGER.info("✅ Required Variables Are Collected.")
     await asyncio.sleep(1)
@@ -203,7 +204,7 @@ async def main():
         LOGGER.info(f"🚫 Assistant Error: {e}")
         sys.exit()
     try:
-        await app.join_chat("net_pro_max")
+        await app.join_chat("HeartBeat_Muzic")
         await app.join_chat("ai_image_junction")
     except Exception:
         pass
@@ -221,7 +222,7 @@ async def main():
     LOGGER.info("✅ PyTgCalls Started.")
     await asyncio.sleep(1)
     LOGGER.info("✅ Sucessfully Hosted Your Bot !!")
-    LOGGER.info("✅ Now Do Visit: @net_pro_max !!")
+    LOGGER.info("✅ Now Do Visit: @HeartBeat_Muzic !!")
     await idle()
 
 
@@ -447,7 +448,7 @@ async def start_message_private(client, message):
         )
 
         # Ensure only one message is sent
-        if START_IMAGE_URL:
+        if MONGO_DB_URI:
             try:
                 await message.reply_photo(
                     photo=START_IMAGE_URL, caption=caption, reply_markup=buttons
@@ -468,11 +469,8 @@ async def start_message_private(client, message):
 CBUTTON = InlineKeyboardMarkup(
     inline_keyboard=[
         [
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ ˼", url="https://t.me/ai_image_junction")
-        ],
-        [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
         ],
         [
             InlineKeyboardButton("〆 ʙᴧᴄᴋ 〆", callback_data="back_to_home")
@@ -493,7 +491,7 @@ ABUTTON = InlineKeyboardMarkup(
 HELP_C = """```
 ⌬ ๏ ʟᴇᴛ's ɪɴᴛʀᴏᴅᴜᴄᴇ ᴍᴜsɪᴄ ʙᴏᴛ```
 
-**⌬ [【 ᴅᴠɪs-ϻυsɪᴄ 】](https://t.me/+ifTJa6EmP4A1MTA9) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
+**⌬ [【 ᴅᴠɪs-ϻυsɪᴄ 】](https://t.me/HeartBeat_Offi) ɪs ᴏɴᴇ ᴏғ ᴛʜᴇ ʙᴇsᴛ ᴍᴜsɪᴄ | ᴠɪᴅᴇᴏ sᴛꝛᴇᴀᴍɪɴɢ ʙᴏᴛ ᴏɴ ᴛᴇʟᴇɢꝛᴧᴍ ғᴏꝛ ʏᴏᴜꝛ ɢꝛᴏᴜᴘs ᴀɴᴅ ᴄʜᴧɴɴᴇʟ**
 ```\n⌬ ʙᴇsᴛ ғᴇᴀsɪʙɪʟɪᴛʏ ᴏɴ ᴛᴏᴘ  ?```
 
 **✦ ʙᴇsᴛ sᴏᴜɴᴅ ǫᴜᴀʟɪᴛʏ
@@ -505,7 +503,7 @@ HELP_C = """```
 
 ᴀʟʟ ᴛʜᴇ ғᴇᴀᴛᴜʀᴇs ᴀʀᴇ ᴡᴏʀᴋɪɴɢ ғɪɴᴇ
 
-⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/net_pro_max)**"""
+⌬ ᴍᴏʀᴇ ɪɴғᴏ. [ᴊᴏɪɴ ᴄʜᴀɴɴᴇʟ](https://t.me/HeartBeat_Muzic)**"""
 
 HELP_X = """```
     【 ᴅᴠɪs-ϻυsɪᴄ 】 ᴍᴇɴᴜ```
@@ -597,7 +595,7 @@ async def back_to_home_menu(client, query):
                 ),
                 InlineKeyboardButton(
                     text="˹ ʀᴇᴘᴏ ˼",
-                    url="https://github.com/IamDvis/DV-MUSIC-V3",  # Callback data for Owner button
+                    url="https://t.me/HeartBeat_Muzic",  # Callback data for Owner button
                 ),
             ]
         ]
@@ -905,7 +903,7 @@ async def stream_logger(
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/+7ehnJA3aMb84OGNl)**
+❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/HeartBeat_Muzic)**
                 """
             else:
                 caption = f"""
@@ -916,7 +914,7 @@ async def stream_logger(
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @net_pro_max
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
                 """
             try:
                 await bot.send_photo(LOG_GROUP_ID, photo=thumbnail, caption=caption)
@@ -979,7 +977,7 @@ async def change_stream(chat_id):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @net_pro_max
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzic
     """
     buttons = InlineKeyboardMarkup(
         [
@@ -990,8 +988,8 @@ async def change_stream(chat_id):
                 )
             ],
             [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
             ],
             [
                 InlineKeyboardButton(
@@ -1094,8 +1092,8 @@ async def stream_audio_or_video(client, message):
                 )
                     ],
                     [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
                     ],
                     [
                         InlineKeyboardButton(
@@ -1178,8 +1176,8 @@ async def stream_audio_or_video(client, message):
                 )
             ],
             [
-            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/net_pro_max"),
-            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/+ifTJa6EmP4A1MTA9")
+            InlineKeyboardButton("˹ ᴜᴘᴅᴧᴛᴇ ˼", url="https://t.me/HeartBeat_Muzic"),
+            InlineKeyboardButton("˹ sᴜᴘᴘᴏꝛᴛ  ˼", url="https://t.me/HeartBeat_Offi")
             ],
             [
                 InlineKeyboardButton(
@@ -1219,7 +1217,7 @@ async def stream_audio_or_video(client, message):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/+7ehnJA3aMb84OGNl)**
+❍ 𝖩ᴏɪɴ ➛ **[sᴜᴘᴘᴏꝛᴛ](https://t.me/HeartBeat_Muzic)**
                 """
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
@@ -1330,7 +1328,7 @@ async def stream_audio_or_video(client, message):
 **❍ Sᴛʀᴇᴀᴍ Tʏᴘᴇ ➥ ** {stream_type}
 **❍ Rᴇǫᴜᴇsᴛᴇᴅ ʙʏ ➥ ** {requested_by}
 
-❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @net_pro_maxx
+❍ ᴘᴏᴡᴇʀᴇᴅ ʙʏ➛ @HeartBeat_Muzicx
                 """
                 await bot.send_photo(chat_id, thumbnail, caption, reply_markup=buttons)
                 await stream_logger(
@@ -1521,7 +1519,7 @@ async def git_repo_link(client, message):
         [
             InlineKeyboardButton(
                 text="˹ sᴜᴘᴘᴏꝛᴛ ˼",
-                url="https://t.me/+ifTJa6EmP4A1MTA9"
+                url="https://t.me/HeartBeat_Offi"
             ),
             InlineKeyboardButton(
                 text="˹ sᴏᴜꝛᴄᴇ ˼",
@@ -1538,7 +1536,7 @@ async def git_repo_link(client, message):
     )
     try:
         await message.reply_photo(
-            photo="https://files.catbox.moe/t5gy4y.jpg", caption=caption, reply_markup=buttons
+            photo="https://telegra.ph/file/e5aaa494015bccbe1ec85.jpg", caption=caption, reply_markup=buttons
         )
     except Exception as e:
         LOGGER.info(f"🚫 Error: {e}")
