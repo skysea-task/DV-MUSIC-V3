@@ -884,7 +884,7 @@ async def stream_logger(
             chat = await bot.get_chat(chat_id)
             chat_name = chat.title
             if chat.username:
-                chat_link = f"@{chat.username}"
+                chat_link = f"@HeartBeat_Muzic}"
             else:
                 chat_link = "Private Chat"
             try:
